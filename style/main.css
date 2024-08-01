@@ -1,0 +1,224 @@
+/* FONT-LINKS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* FONT-LINKS */
+
+/* FONT-FAMILY */
+.first-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* ALL-COMMON-CSS-STYLE-START */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+a,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.img-fluid {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.d-grid{
+  display: grid;
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.bg {
+  background-color: black;
+}
+.t-t {
+  text-transform: capitalize;
+}
+.t-center{
+  text-align: center;
+}
+.links-bg {
+  background-color: #e6533c;
+}
+/* ALL-COMMON-CSS-STYLE-END */
+
+/* NAVIGATION-PART-STYLE */
+#header {
+  padding: 58px 0 0 0;
+  background: linear-gradient(
+    180deg,
+    rgb(26 26 26) 0%,
+    rgb(74 74 74) 50%,
+    rgb(10 10 10) 100%
+  );
+}
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.page-logo a {
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: #e6533c;
+}
+.nav-list {
+  border: 1px solid rgb(114 107 107);
+  padding: 4px;
+  border-radius: 40px;
+  gap: 47px;
+}
+.nav-list .nav-item {
+  padding: 8px 20px;
+  transition: all ease-in-out 0.5s;
+}
+.nav-list .nav-item:hover {
+  background-color: #e6533c;
+  border-radius: 45px;
+}
+.nav-list .nav-uni {
+  border-radius: 46px;
+}
+.nav-list .nav-item .nav-links {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* NAVIGATION-PART-STYLE */
+
+/* BANNER-PART-STYLE */
+.banner {
+  justify-content: center;
+  align-items: center;
+  gap: 88px;
+  margin-top: 35px;
+}
+/* PART-01 */
+.banner-text-container {
+  width: 60%;
+}
+.banner-text-container h3 {
+  font-size: 4.875rem;
+  font-weight: 900;
+  color: #fff;
+}
+.banner-text-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 30px 0;
+  letter-spacing: 0.5px;
+}
+.banner-text-container .btn a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 16px 48px;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.banner-text-container .btn .join-links {
+  border: 1px solid transparent;
+  margin-right: 12px;
+}
+.banner-text-container .btn a:hover {
+  border: 1px solid transparent;
+  background-color: #e6533c;
+}
+/* PART-02 */
+.banner-img-container {
+  width: 40%;
+  position: relative;
+}
+
+.banner-img-container .video {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 195px;
+  height: 100px;
+  padding: 16px 23px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 125px;
+  right: -30px;
+}
+
+.banner-img-container .video h3 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.banner-img-container .video p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+.banner-img-container .tutorial {
+  width: 200px;
+  height: 95px;
+  background-color: rgba(48, 48, 48, 0.54);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 75px;
+  left: -110px;
+}
+
+.tutorial .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.tutorial i {
+  color: #fff;
+}
+
+.banner-img-container .tutorial .text h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fafaf9;
+  letter-spacing: 2px;
+}
+
+.banner-img-container .tutorial .text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #efede8a6;
+}
+/* BANNER-PART-STYLE */

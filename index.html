@@ -1,14 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
+    <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <style>
+        #habit-section {
+            margin-top: 100px;
+        }
+
+        .habit-text-container {
+            width: 668px;
+            margin: auto;
+        }
+
+        .habit-text-container h3 {
+            color: #fff;
+            font-weight: 900;
+            font-size: 3rem;
+        }
+
+        .habit-text-container p {
+            color: #fff;
+            font-weight: 400;
+            font-size: 0.875rem;
+            padding: 0px 20px;
+            margin: 14px 0 58px 0;
+        }
+        .habit-img-container{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+        .habit-img{
+            width: 180px;
+            height: 180px;
+            background: #1a1a1a;
+            padding: 4px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .habit-img img{
+            border-radius: 50%;
+        }
+        .habit-text h3{
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .habit-text p{
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 6px;
+            padding: 0 15px;
+        }
+    </style>
 </head>
-<body>
-    <header></header>
-    <main></main>
+
+<body class=" bg">
+    <header id="header" class="first-font">
+        <div class="container">
+            <!-- NAVIGATION-PART -->
+            <nav id="navbar" class="d-flex">
+                <div class="page-logo">
+                    <a href="#">Fitness</a>
+                </div>
+                <ul class="nav-list d-flex">
+                    <li class="nav-item nav-uni links-bg">
+                        <a class="nav-links" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="#">service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-links" href="#">contact</a>
+                    </li>
+                    <li class="nav-item nav-pad">
+                        <a class="nav-links" href="#">about</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- NAVIGATION-PART -->
+        </div>
+        <!-- BANNER-PART -->
+        <div class="container d-flex banner">
+            <!-- PART-01 -->
+            <div class="banner-text-container t-t">
+                <h3>Get body in shape & stay healthy</h3>
+                <p>A huge selection of health and fitness content, healthy recipes <br> and transformation stories to
+                    help
+                    you get fit and stay fit!</p>
+                <div class="btn">
+                    <a class="join-links links-bg" href="#">Join Now</a>
+                    <a href="#">Download app</a>
+                </div>
+            </div>
+            <!-- PART-02 -->
+            <div class="banner-img-container">
+                <img class="img-fluid" src="images/Images 2.png" alt="">
+                <div class="video">
+                    <h3>500+</h3>
+                    <p>free workout videos</p>
+                </div>
+                <div class="tutorial">
+                    <div class="icon links-bg">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="text">
+                        <h3>350+</h3>
+                        <p>video tutorial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BANNER-PART -->
+    </header>
+    <main>
+        <!-- HABIT-PART -->
+        <section id="habit-section" class="first-font">
+            <div class="container">
+                <div class="habit-text-container t-center">
+                    <h3>Change Your Habits</h3>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym.</p>
+                </div>
+                <div class="habit-img-container d-grid">
+                    <!-- HABIT-CARD-ITEM-01 -->
+                    <div class="habit-img-item">
+                        <div class="habit-img">
+                            <img class="img-fluid" src="images/image 5.png" alt="">
+                        </div>
+                        <div class="habit-text t-center">
+                            <h3>Movement</h3>
+                            <p>We believe fitness should be accessible to everyone</p>
+                        </div>
+                    </div>
+                    <!-- HABIT-CARD-ITEM-02 -->
+                    <div class="habit-img-item">
+                        <div class="habit-img">
+                            <img class="img-fluid" src="images/image 4.png" alt="">
+                        </div>
+                        <div class="habit-text t-center">
+                            <h3>Movement</h3>
+                            <p>We believe fitness should be accessible to everyone</p>
+                        </div>
+                    </div>
+                    <!-- HABIT-CARD-ITEM-03 -->
+                    <div class="habit-img-item">
+                        <div class="habit-img">
+                            <img class="img-fluid" src="images/image 3.png" alt="">
+                        </div>
+                        <div class="habit-text t-center">
+                            <h3>Movement</h3>
+                            <p>We believe fitness should be accessible to everyone</p>
+                        </div>
+                    </div>
+                    <!-- HABIT-CARD-ITEM-04 -->
+                    <div class="habit-img-item">
+                        <div class="habit-img">
+                            <img class="img-fluid" src="images/image 2.png" alt="">
+                        </div>
+                        <div class="habit-text t-center">
+                            <h3>Movement</h3>
+                            <p>We believe fitness should be accessible to everyone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HABIT-PART -->
+    </main>
     <footer></footer>
 </body>
+
 </html>
