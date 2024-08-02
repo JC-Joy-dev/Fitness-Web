@@ -7,20 +7,21 @@
     <title>Fitness Website</title>
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
     <style>
         
     </style>
 </head>
 
-<body class=" bg">
+<body class="bg">
     <header id="header" class="first-font">
-        <div class="container">
+        <div class="container sm-device">
             <!-- NAVIGATION-PART -->
             <nav id="navbar" class="d-flex">
                 <div class="page-logo">
                     <a href="#">Fitness</a>
                 </div>
-                <ul class="nav-list d-flex">
+                <ul class="nav-list d-flex d-sm-none">
                     <li class="nav-item nav-uni links-bg">
                         <a class="nav-links" href="#">home</a>
                     </li>
@@ -34,11 +35,16 @@
                         <a class="nav-links" href="#">about</a>
                     </li>
                 </ul>
+                <div class="nav-logo d-lg-none d-block">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </nav>
             <!-- NAVIGATION-PART -->
         </div>
         <!-- BANNER-PART -->
-        <div class="container d-flex banner">
+        <div class="container d-flex banner sm-device">
             <!-- PART-01 -->
             <div class="banner-text-container t-t">
                 <h3>Get body in shape & stay healthy</h3>
@@ -73,7 +79,7 @@
     <main>
         <!-- HABIT-PART -->
         <section id="habit-section" class="first-font">
-            <div class="container">
+            <div class="container sm-device-container">
                 <div class="habit-text-container t-center">
                     <h3>Change Your Habits</h3>
                     <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access

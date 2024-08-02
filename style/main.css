@@ -41,8 +41,12 @@ a {
 .d-flex {
   display: flex;
 }
-.d-grid{
+.d-grid {
   display: grid;
+}
+
+.d-lg-none {
+  display: none;
 }
 .container {
   max-width: 1060px;
@@ -54,7 +58,7 @@ a {
 .t-t {
   text-transform: capitalize;
 }
-.t-center{
+.t-center {
   text-align: center;
 }
 .links-bg {
@@ -115,9 +119,11 @@ a {
   margin-top: 35px;
 }
 /* PART-01 */
+
 .banner-text-container {
-  width: 60%;
+    max-width: 647px;
 }
+
 .banner-text-container h3 {
   font-size: 4.875rem;
   font-weight: 900;
@@ -150,10 +156,9 @@ a {
 }
 /* PART-02 */
 .banner-img-container {
-  width: 40%;
+  max-width: 325px;
   position: relative;
 }
-
 .banner-img-container .video {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -163,13 +168,13 @@ a {
   padding: 16px 23px;
   text-transform: capitalize;
   position: absolute;
-  top: 125px;
-  right: -30px;
+  top: 106px;
+  right: -75px;
 }
 
 .banner-img-container .video h3 {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #fff;
   letter-spacing: 2px;
 }
@@ -191,7 +196,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 75px;
+  bottom: 50px;
   left: -110px;
 }
 
@@ -228,7 +233,7 @@ a {
 }
 
 .habit-text-container {
-  width: 668px;
+  max-width: 668px;
   margin: auto;
 }
 
@@ -242,14 +247,14 @@ a {
   color: #fff;
   font-weight: 400;
   font-size: 0.875rem;
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
   margin: 14px 0 58px 0;
 }
-.habit-img-container{
+.habit-img-container {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
-.habit-img{
+.habit-img {
   width: 180px;
   height: 180px;
   background: #1a1a1a;
@@ -257,16 +262,16 @@ a {
   border-radius: 50%;
   margin: 0 auto;
 }
-.habit-img img{
+.habit-img img {
   border-radius: 50%;
 }
-.habit-text h3{
+.habit-text h3 {
   font-weight: 600;
   font-size: 1.125rem;
   color: #fff;
   margin-top: 30px;
 }
-.habit-text p{
+.habit-text p {
   font-weight: 400;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
@@ -274,3 +279,107 @@ a {
   padding: 0 15px;
 }
 /* HABIT-PART-STYLE */
+/* RESPONSIVE-FOR-SMALL-DEVICE */
+@media screen and (max-width: 576px) {
+  /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
+  .d-sm-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+  .sm-device {
+    padding: 0 20px;
+  }
+  /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
+  /* NAVIGATION-PART */
+  .nav-logo a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-logo a i {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  /* NAVIGATION-PART */
+  /* BANNER-PART */
+  .banner {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .banner-text-container h3 {
+    font-size: 2.875rem;
+    padding-right: 75px;
+}
+  .banner-text-container p {
+    padding-right: 115px;
+    line-height: 25px;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .banner-text-container .btn a {
+    font-size: 1rem;
+    padding: 16px 30px;
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+  }
+  .banner-img-container .video {
+    padding: 12px 15px;
+    top: 62px;
+    right: -44px;
+    width: auto;
+    height: auto;
+    }
+    .banner-img-container .video h3 {
+    font-size: 2rem;
+    }
+    .banner-img-container .video p {
+    font-size: 0.75rem;
+    }
+    
+    .banner-img-container .tutorial {
+    bottom: 230px;
+    left: 0;
+    padding: 14px 17px;
+    width: auto;
+    height: auto;
+    }
+    .tutorial .icon {
+    width: 30px;
+    height: 30px;
+    }
+    .banner-img-container .tutorial .text p {
+    font-size: 0.75rem;
+    }
+  /* BANNER-PART */
+
+  /* HABIT-PART */
+  #habit-section {
+    margin-top: 0px;
+}
+  .sm-device-container{
+    padding: 0 1.75rem;
+  }
+  .habit-text-container h3 {
+    font-size: 2rem;
+}
+.habit-text-container p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.875rem;
+    
+    margin: 14px 0 58px 0;
+}
+.habit-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 3.375rem;
+}
+  /* HABIT-PART */
+}
