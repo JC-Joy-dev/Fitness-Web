@@ -44,7 +44,9 @@ a {
 .d-grid {
   display: grid;
 }
-
+.b-none {
+  border: none !important;
+}
 .d-lg-none {
   display: none;
 }
@@ -121,7 +123,7 @@ a {
 /* PART-01 */
 
 .banner-text-container {
-    max-width: 647px;
+  max-width: 647px;
 }
 
 .banner-text-container h3 {
@@ -136,7 +138,7 @@ a {
   margin: 30px 0;
   letter-spacing: 0.5px;
 }
-.banner-text-container .btn a {
+.btn a {
   font-size: 1.125rem;
   font-weight: 600;
   color: #fff;
@@ -254,6 +256,10 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
+.habit-img-item {
+  max-width: 235px;
+  margin: 0 auto;
+}
 .habit-img {
   width: 180px;
   height: 180px;
@@ -279,6 +285,127 @@ a {
   padding: 0 15px;
 }
 /* HABIT-PART-STYLE */
+
+/* MY-GOAL-PART-STYLE */
+#my-goal-section {
+  margin: 100px 0;
+}
+.container-bg {
+  background: #222222;
+  padding: 30px;
+  gap: 14.375rem;
+  border-radius: 18px;
+  justify-content: space-between;
+}
+.container-bg .goal-text-container,
+.goal-img-container {
+  max-width: calc((100% - 160px) / 2);
+}
+.goal-text-container {
+  padding: 10px 0 10px 25px;
+  max-width: 65%;
+}
+.goal-text-container h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+.goal-text-container p {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 14px 0 30px 0;
+  line-height: 24px;
+}
+.goal-img-container {
+  max-width: 35%;
+}
+.goal-img-container img {
+  border-radius: 18px;
+  height: 100%;
+}
+/* MY-GOAL-PART-STYLE */
+
+/* TRAINING-PART-STYLE */
+.training-text-container {
+  max-width: 630px;
+  margin-bottom: 60px;
+}
+.training-text-container h3 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 3rem;
+}
+.training-text-container p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.training-img-gallery {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 200px);
+}
+
+.gallery-collage {
+  grid-column: span 3;
+  position: relative;
+}
+.gallery-collage-big {
+  grid-column: span 6;
+}
+.gallery-collage img {
+  height: 100%;
+}
+.sky-blue,
+.red-light,
+.black-white,
+.light-green,
+.light-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sky-blue h5,
+.black-white h5,
+.light-green h5,
+.light-blue h5 {
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+}
+.red-light h5 {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+#collage-four h5 {
+  position: absolute;
+  bottom: 135px;
+  left: 330px;
+}
+.common-text h5 {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.sky-blue {
+  background: rgb(103 227 204 / 50%);
+}
+.red-light {
+  background: rgb(140 57 55 / 50%);
+}
+.black-white {
+  background: rgb(16 17 20 / 50%);
+}
+.light-green {
+  background: rgb(68 255 0 / 50%);
+}
+.light-blue {
+  background: rgb(0 72 255 / 50%);
+}
+/* TRAINING-PART-STYLE */
 /* RESPONSIVE-FOR-SMALL-DEVICE */
 @media screen and (max-width: 576px) {
   /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
@@ -289,7 +416,16 @@ a {
     display: block;
   }
   .sm-device {
-    padding: 0 20px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 2rem !important;
+  }
+  p,h5 {
+    font-size: 1rem;
   }
   /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
   /* NAVIGATION-PART */
@@ -313,7 +449,7 @@ a {
   .banner-text-container h3 {
     font-size: 2.875rem;
     padding-right: 75px;
-}
+  }
   .banner-text-container p {
     padding-right: 115px;
     line-height: 25px;
@@ -323,7 +459,7 @@ a {
     justify-content: flex-start;
     align-items: center;
   }
-  .banner-text-container .btn a {
+  .btn a {
     font-size: 1rem;
     padding: 16px 30px;
     display: inline-block;
@@ -336,50 +472,88 @@ a {
     right: -44px;
     width: auto;
     height: auto;
-    }
-    .banner-img-container .video h3 {
+  }
+  .banner-img-container .video h3 {
     font-size: 2rem;
-    }
-    .banner-img-container .video p {
+  }
+  .banner-img-container .video p {
     font-size: 0.75rem;
-    }
-    
-    .banner-img-container .tutorial {
+  }
+
+  .banner-img-container .tutorial {
     bottom: 230px;
     left: 0;
     padding: 14px 17px;
     width: auto;
     height: auto;
-    }
-    .tutorial .icon {
+  }
+  .tutorial .icon {
     width: 30px;
     height: 30px;
-    }
-    .banner-img-container .tutorial .text p {
+  }
+  .banner-img-container .tutorial .text p {
     font-size: 0.75rem;
-    }
+  }
   /* BANNER-PART */
 
   /* HABIT-PART */
   #habit-section {
     margin-top: 0px;
-}
-  .sm-device-container{
+  }
+  .sm-device-container {
     padding: 0 1.75rem;
   }
   .habit-text-container h3 {
     font-size: 2rem;
-}
-.habit-text-container p {
+  }
+  .habit-text-container p {
     color: #fff;
     font-weight: 400;
     font-size: 0.875rem;
-    
+
     margin: 14px 0 58px 0;
-}
-.habit-img-container {
+  }
+  .habit-img-container {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 3.375rem;
-}
+  }
   /* HABIT-PART */
+
+  /* MY-GOAL-PART */
+  .container-bg {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .goal-text-container,
+  .goal-img-container {
+    max-width: 100% !important;
+    padding: 0;
+  }
+  .goal-text-container h3 {
+    max-width: 305px;
+  }
+  .goal-text-container p {
+    max-width: 275px;
+  }
+  /* MY-GOAL-PART */
+
+  /* TRAINING-PART */
+  .training-text-container {
+    margin-bottom: 30px;
+    padding-right: 195px;
+  }
+  .gallery-collage {
+    grid-column: span 7;
+  }
+  .gallery-collage-big {
+    grid-column: span 5;
+  }
+  #collage-four h5,
+  .sky-blue h5,
+  .black-white h5,
+  .light-green h5 {
+    position: absolute;
+    bottom: 16px;
+    left: 14px;
+  }
+  /* TRAINING-PART */
 }
