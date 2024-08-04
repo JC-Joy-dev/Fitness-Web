@@ -37,6 +37,7 @@ a {
 }
 .img-fluid {
   width: 100%;
+  height: 100%;
 }
 .d-flex {
   display: flex;
@@ -406,6 +407,121 @@ a {
   background: rgb(0 72 255 / 50%);
 }
 /* TRAINING-PART-STYLE */
+
+/* MY-TEAM-PART-STYLE */
+#my-team-section{
+  margin: 90px 0;
+}
+.my-team-text{
+  margin-bottom: 60px;
+}
+.text-container{
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.text-container h3{
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+.text-container p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #ffffff80;
+  margin-top: 14px;
+}
+.my-team-container{
+  background-color: #1A1A1A;
+  border-radius: 18px;
+  padding: 20px;
+}
+.my-team-profile{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.profile-item{
+  max-width: 353px;
+  height: 270px;
+  position: relative;
+}
+.profile-item img{
+  border-radius: 18px;
+}
+.profile-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 18px;
+}
+.profile-text{
+  position: absolute;
+  bottom: 17px;
+  left: 19px;
+}
+.profile-text h5{
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.profile-text p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* MY-TEAM-PART-STYLE */
+
+/* FOOTER-PART-STYLE */
+#footer-part{
+  background-color: #1a1a1a;
+}
+
+.footer-container{
+  gap: 100px;
+}
+.column-one{
+  max-width: 450px;
+  margin: 65px 0 80px 0;
+}
+.column-one h3{
+  font-size: 4.375rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #E6533C;
+  margin-bottom: 20px;
+}
+.column-one p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+}
+.column-two{
+  max-width: 510px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 145px;
+  margin: 65px 0 80px 0;
+}
+.footer-menu-list h3{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.footer-menu-item{
+  margin-bottom: 20px;
+}
+.footer-menu-item .footer-menu-links{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+}
+.line{
+  border-top: 1px solid red;
+}
+/* FOOTER-PART-STYLE */
 /* RESPONSIVE-FOR-SMALL-DEVICE */
 @media screen and (max-width: 576px) {
   /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
