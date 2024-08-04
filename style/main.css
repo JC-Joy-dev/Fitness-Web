@@ -132,6 +132,9 @@ a {
   font-weight: 900;
   color: #fff;
 }
+
+
+
 .banner-text-container p {
   font-size: 1rem;
   font-weight: 400;
@@ -408,44 +411,176 @@ a {
 }
 /* TRAINING-PART-STYLE */
 
-/* MY-TEAM-PART-STYLE */
-#my-team-section{
+/* BMI-CALCULATOR-PART-STYLE */
+#bmi-text-part{
   margin: 90px 0;
 }
-.my-team-text{
+.bmi-text{
+  max-width: 670px;
+  margin: 0 auto;
+}
+.bmi-text h3{
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.bmi-text p{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 35px;
+  line-height: 24px;
+}
+#bmi-calculator-part {
+  background-color: #222;
+  padding: 50px 0;
+}
+.bmi-calculator-container {
+  gap: 140px;
+}
+.bmi-chart {
+  width: 350px;
+}
+.bmi-chart-tittle h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+#bmi-chart-table {
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-bottom: none;
+}
+.table-head{
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+.table-head p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffff;
+  padding: 15px 0 15px 20px;
+  width: 50%;
+}
+.table-head h6{
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+  padding: 15px 0 15px 20px;
+  width: 50%;
+}
+.table-head .border-right{
+  border-right: 1px solid rgb(255 255 255 / 10%);
+}
+.bmi-calculate {
+  max-width: 570px;
+}
+.text-content {
+  margin-bottom: 34px;
+}
+.text-content h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+.text-content p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+  padding-right: 30px;
+  line-height: 24px;
+}
+.data-input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.data-input input {
+  padding: 12px 0 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #393939;
+  width: 100%;
+}
+.data-input .size {
+  width: 50%;
+}
+.data-input .gender {
+  position: relative;
+  width: 50%;
+}
+.data-input .gender i,
+.activity i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: rgb(255 255 255 / 60%);
+  transform: translateY(-50%);
+}
+.data-input .activity {
+  position: relative;
+  width: 100%;
+}
+.data-input input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 60%);
+}
+.calculate-btn {
+  margin-top: 22px;
+}
+.calculate-btn button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #e6533c;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 50px;
+}
+/* BMI-CALCULATOR-PART-STYLE */
+
+/* MY-TEAM-PART-STYLE */
+#my-team-section {
+  margin: 90px 0;
+}
+.my-team-text {
   margin-bottom: 60px;
 }
-.text-container{
+.text-container {
   max-width: 670px;
   margin: 0 auto;
   padding: 0 25px;
 }
-.text-container h3{
+.text-container h3 {
   font-size: 3rem;
   font-weight: 900;
   color: #fff;
 }
-.text-container p{
+.text-container p {
   font-size: 0.875rem;
   font-weight: 400;
   color: #ffffff80;
   margin-top: 14px;
 }
-.my-team-container{
-  background-color: #1A1A1A;
+.my-team-container {
+  background-color: #1a1a1a;
   border-radius: 18px;
   padding: 20px;
 }
-.my-team-profile{
+.my-team-profile {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.profile-item{
+.profile-item {
   max-width: 353px;
   height: 270px;
   position: relative;
 }
-.profile-item img{
+.profile-item img {
   border-radius: 18px;
 }
 .profile-item-overlay {
@@ -457,17 +592,17 @@ a {
   background-color: rgb(0 0 0 / 20%);
   border-radius: 18px;
 }
-.profile-text{
+.profile-text {
   position: absolute;
   bottom: 17px;
   left: 19px;
 }
-.profile-text h5{
+.profile-text h5 {
   font-size: 1.25rem;
   font-weight: 900;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.profile-text p{
+.profile-text p {
   font-size: 0.875rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
@@ -475,51 +610,58 @@ a {
 /* MY-TEAM-PART-STYLE */
 
 /* FOOTER-PART-STYLE */
-#footer-part{
+#footer-part {
   background-color: #1a1a1a;
+  padding: 65px 0 35px 0;
 }
 
-.footer-container{
+.footer-container {
   gap: 100px;
 }
-.column-one{
+.column-one {
   max-width: 450px;
-  margin: 65px 0 80px 0;
+  padding-right: 25px;
 }
-.column-one h3{
+.column-one h3 {
   font-size: 4.375rem;
   font-weight: 800;
   font-style: italic;
-  color: #E6533C;
+  color: #e6533c;
   margin-bottom: 20px;
 }
-.column-one p{
+.column-one p {
   font-size: 0.875rem;
   font-weight: 400;
   color: rgb(255 255 255 / 50%);
+  line-height: 24px;
 }
-.column-two{
+.column-two {
   max-width: 510px;
   grid-template-columns: repeat(2, 1fr);
   gap: 145px;
-  margin: 65px 0 80px 0;
 }
-.footer-menu-list h3{
+.footer-menu-list h3 {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 40px;
 }
-.footer-menu-item{
+.footer-menu-item {
   margin-bottom: 20px;
 }
-.footer-menu-item .footer-menu-links{
+.footer-menu-item .footer-menu-links {
   font-size: 1.25rem;
   font-weight: 400;
   color: rgb(255 255 255 / 50%);
 }
-.line{
-  border-top: 1px solid red;
+.line {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 80px 0 35px 0;
+}
+.line-text h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
 /* FOOTER-PART-STYLE */
 /* RESPONSIVE-FOR-SMALL-DEVICE */
@@ -540,7 +682,8 @@ a {
   h3 {
     font-size: 2rem !important;
   }
-  p,h5 {
+  p,
+  h5 {
     font-size: 1rem;
   }
   /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
