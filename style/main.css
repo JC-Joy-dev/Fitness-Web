@@ -164,7 +164,7 @@ a {
   position: relative;
 }
 .banner-img-container .video {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255 255 255 / 20%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 195px;
@@ -192,7 +192,7 @@ a {
 .banner-img-container .tutorial {
   width: 200px;
   height: 95px;
-  background-color: rgba(48, 48, 48, 0.54);
+  background-color: rgba(48 48 48 / 50%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 23px;
@@ -253,6 +253,7 @@ a {
   font-size: 0.875rem;
   padding: 0px 1.25rem;
   margin: 14px 0 58px 0;
+  line-height: 24px;
 }
 .habit-img-container {
   grid-template-columns: repeat(4, 1fr);
@@ -285,6 +286,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 6px;
   padding: 0 15px;
+  line-height: 20px;
 }
 /* HABIT-PART-STYLE */
 
@@ -327,6 +329,67 @@ a {
   height: 100%;
 }
 /* MY-GOAL-PART-STYLE */
+
+/* OUR-SERVICES-STYLE */
+#our-service-part {
+  background: #1a1a1a;
+  padding: 90px 0;
+}
+.service-text {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.service-text h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.service-text p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+}
+.services-list {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+  gap: 20px;
+}
+.services-list-item {
+  border: 1px solid rgb(255 255 255 / 50%);
+  padding: 20px 30px;
+}
+.services-list-item .list-item-icon {
+  max-width: 70px;
+  height: 70px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #e6533c;
+}
+.services-list-item h6 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px 0 15px 0;
+}
+.underline {
+  border-top: 3px solid #e6533c;
+  width: 85px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.services-list-item p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+/* OUR-SERVICES-STYLE */
 
 /* TRAINING-PART-STYLE */
 .training-text-container {
@@ -574,8 +637,8 @@ a {
   gap: 20px;
 }
 .profile-item {
-  max-width: 353px;
-  height: 270px;
+  /* max-width: 353px;
+  height: 270px; */
   position: relative;
 }
 .profile-item img {
@@ -727,8 +790,8 @@ a {
   }
   .banner-img-container .video {
     padding: 12px 15px;
-    top: 62px;
-    right: -44px;
+    top: 70px;
+    right: -35px;
     width: auto;
     height: auto;
   }
@@ -795,6 +858,15 @@ a {
   }
   /* MY-GOAL-PART */
 
+  /* OUR-SERVICES-PART */
+  #our-service-part {
+    padding: 50px 0;
+  }
+  .services-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* OUR-SERVICES-PART */
+
   /* TRAINING-PART */
   .training-text-container {
     margin-bottom: 40px;
@@ -809,7 +881,7 @@ a {
   }
   .training-img-gallery {
     grid-template-rows: auto;
-}
+  }
   .gallery-collage {
     grid-column: span 7;
   }
