@@ -167,8 +167,8 @@ a {
   background-color: rgb(255 255 255 / 20%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 195px;
-  height: 100px;
+  max-width: 195px;
+  max-height: 100px;
   padding: 16px 23px;
   text-transform: capitalize;
   position: absolute;
@@ -190,8 +190,8 @@ a {
 }
 
 .banner-img-container .tutorial {
-  width: 200px;
-  height: 95px;
+  max-width: 200px;
+  max-height: 95px;
   background-color: rgba(48 48 48 / 50%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -498,9 +498,10 @@ a {
 }
 .bmi-calculator-container {
   gap: 140px;
+  grid-template-columns: 1fr 2fr;
 }
 .bmi-chart {
-  width: 350px;
+  max-width: 350px;
 }
 .bmi-chart-tittle h3 {
   font-size: 1.75rem;
@@ -557,34 +558,42 @@ a {
   gap: 12px;
   margin-bottom: 12px;
 }
-
-.data-input input {
+.data-input input,
+.activity {
   padding: 12px 0 12px 20px;
   border: none;
   border-radius: 8px;
   background-color: #393939;
   width: 100%;
+  height: 100%;
 }
 .data-input .size {
   width: 50%;
 }
-.data-input .gender {
-  position: relative;
-  width: 50%;
-}
-.data-input .gender i,
-.activity i {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  color: rgb(255 255 255 / 60%);
-  transform: translateY(-50%);
-}
-.data-input .activity {
-  position: relative;
+.data-input .activity-div {
   width: 100%;
 }
-.data-input input::placeholder {
+.data-input .activity {
+  appearance: none;
+  cursor: pointer;
+}
+.data-input .activity option {
+  margin-top: 10px;
+}
+.data-input .position,
+.activity-div {
+  position: relative;
+}
+.data-input i,
+.activity-div i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: rgb(255 255 255 / 60%);
+  font-size: 20px;
+}
+.data-input input::placeholder,
+select {
   font-size: 1rem;
   font-weight: 400;
   color: rgb(255 255 255 / 60%);
@@ -725,6 +734,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 /* FOOTER-PART-STYLE */
+
 /* RESPONSIVE-FOR-SMALL-DEVICE */
 @media screen and (max-width: 576px) {
   /* ALL-COMMON-STYLE-FOR-SM-DEVICE */
@@ -796,9 +806,10 @@ a {
     height: auto;
   }
   .banner-img-container .video h3 {
-    font-size: 2rem;
+    font-size: 1.875rem;
   }
-  .banner-img-container .video p {
+  .banner-img-container .video p,
+  .banner-img-container .tutorial .text p {
     font-size: 0.75rem;
   }
 
@@ -813,9 +824,7 @@ a {
     width: 30px;
     height: 30px;
   }
-  .banner-img-container .tutorial .text p {
-    font-size: 0.75rem;
-  }
+
   /* BANNER-PART */
 
   /* HABIT-PART */
@@ -914,7 +923,7 @@ a {
   }
   .bmi-calculator-container {
     gap: 40px;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .bmi-chart-tittle h3 {
     font-size: 1rem;
@@ -960,3 +969,4 @@ a {
     margin: 70px 0 40px 0;
   }
 }
+

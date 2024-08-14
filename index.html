@@ -54,6 +54,7 @@
                     <a href="#">Download app</a>
                 </div>
             </div>
+            
             <!-- PART-02 -->
             <div class="banner-img-container">
                 <img class="img-fluid" src="images/Images 2.png" alt="">
@@ -314,7 +315,7 @@
             </div>
         </section>
         <section id="bmi-calculator-part" class="first-font">
-            <div class="container bmi-calculator-container d-flex sm-device">
+            <div class="container bmi-calculator-container d-grid sm-device">
                 <div class="bmi-chart">
                     <div class="bmi-chart-tittle">
                         <h3>BMI Calculator Chart</h3>
@@ -345,8 +346,7 @@
                 <div class="bmi-calculate">
                     <div class="text-content">
                         <h3>Calculate Your BMI</h3>
-                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or
-                            access to a gym. </p>
+                        <p>BMI calculation assesses body fat based on weight and height, helping evaluate overall health and fitness levels.</p>
                     </div>
                     <form>
                         <div class="data-input">
@@ -361,14 +361,26 @@
                             <div class="age size">
                                 <input type="text" placeholder="Age">
                             </div>
-                            <div class="gender">
-                                <input type="text size" placeholder="Sex">
-                                <i class="fa fa-angle-down"></i>
+                            <div class="gender size position">
+                                <!-- <input type="text size" placeholder="Sex"> -->
+                                 <select name="sex" id="select-option" class="activity">
+                                    <option value="">Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                 </select>
+                                 <i class="fa fa-angle-down"></i>
                             </div>
                         </div>
                         <div class="data-input">
-                            <div class="activity">
-                                <input type="text size" placeholder="Select an activity factor">
+                            <div class="activity-div">
+                                <!-- <input type="text size" placeholder="Select an activity factor"> -->
+                                 <select name="select-value" id="select-value" class="activity">
+                                    <option value="">Select an activity factor</option>
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                    <option value="four">Four</option>
+                                 </select>
                                 <i class="fa fa-angle-down"></i>
                             </div>
                         </div>
