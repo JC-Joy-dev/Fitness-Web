@@ -1,5 +1,8 @@
 /* FONT-LINKS */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 /* FONT-LINKS */
 
 /* FONT-FAMILY */
@@ -82,6 +85,7 @@ a {
 #navbar {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .page-logo a {
   font-weight: 800;
@@ -115,25 +119,28 @@ a {
 /* NAVIGATION-PART-STYLE */
 
 /* BANNER-PART-STYLE */
-.banner {
-  justify-content: center;
-  align-items: center;
-  gap: 88px;
-  margin-top: 35px;
+.banner{
+  gap: 160px;
+  justify-content: space-between;
 }
-/* PART-01 */
-
-.banner-text-container {
-  max-width: 647px;
+.banner-text-container{
+  max-width: 530px;
+  margin-top: 65px;
 }
-
 .banner-text-container h3 {
   font-size: 4.875rem;
   font-weight: 900;
   color: #fff;
   line-height: 94px;
 }
-
+.banner-text-container .text-change {
+  font-family: "Fleur De Leah", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 9.375rem;
+  margin-right: 15px;
+}
 .banner-text-container p {
   font-size: 1rem;
   font-weight: 400;
@@ -141,6 +148,136 @@ a {
   margin: 30px 0;
   letter-spacing: 0.5px;
   line-height: 24px;
+}
+
+.btn a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 16px 48px;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.banner-text-container .btn .join-links {
+  border: 1px solid transparent;
+}
+.banner-btn {
+  display: flex;
+  gap: 15px;
+  max-width: calc(100% - 70px);
+}
+.banner-btn a{
+  flex: 1;
+}
+/* Part-02 */
+.banner-img-container{
+  max-width: 370px;
+  flex-grow: 1;
+  position: relative;
+}
+.banner-img-container img{
+  object-fit: cover;
+}
+.banner-img-container .video {
+  background-color: rgb(255 255 255 / 20%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 23px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 160px;
+  right: -50px;
+}
+.banner-img-container .video h3 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.banner-img-container .video p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.651);
+}
+.banner-img-container .tutorial {
+  background-color: rgba(48 48 48 / 50%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 75px;
+  left: -80px;
+}
+.tutorial .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.tutorial i {
+  color: #fff;
+}
+.banner-img-container .tutorial .text h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fafaf9;
+  letter-spacing: 2px;
+}
+.banner-img-container .tutorial .text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #efede8a6;
+}
+/* .banner {
+  grid-template-columns: 520px 440px;
+  gap: 100px;
+} */
+/* PART-01 */
+
+/* .banner-text-container {
+  margin-top: 65px;
+}
+.banner-text-container h3 {
+  font-size: 4.875rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 94px;
+}
+.banner-text-container .text-change {
+  font-family: "Fleur De Leah", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 9.375rem;
+  margin-right: 15px;
+}
+.banner-text-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 30px 0;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.banner-btn {
+  display: flex;
+  gap: 15px;
+  max-width: 80%;
+}
+.banner-btn a {
+  display: block;
+  text-align: center;
+  flex: 1;
+  padding: 16px 0 !important;
 }
 .btn a {
   font-size: 1.125rem;
@@ -154,28 +291,27 @@ a {
 }
 .banner-text-container .btn .join-links {
   border: 1px solid transparent;
-  margin-right: 12px;
 }
 .banner-text-container .btn a:hover {
   border: 1px solid transparent;
   background-color: #e6533c;
-}
+} */
 /* PART-02 */
-.banner-img-container {
-  max-width: 325px;
+/* .banner-img-container {
   position: relative;
+}
+.banner-img-container img {
+  object-fit: contain;
 }
 .banner-img-container .video {
   background-color: rgb(255 255 255 / 20%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  /* max-width: 195px;
-  max-height: 100px; */
   padding: 16px 23px;
   text-transform: capitalize;
   position: absolute;
-  top: 106px;
-  right: -75px;
+  top: 185px;
+  right: -20px;
 }
 
 .banner-img-container .video h3 {
@@ -192,18 +328,16 @@ a {
 }
 
 .banner-img-container .tutorial {
-  /* max-width: 200px;
-  max-height: 95px; */
   background-color: rgba(48 48 48 / 50%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px 23px;
+  padding: 20px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 50px;
-  left: -110px;
+  bottom: 115px;
+  left: -50px;
 }
 
 .tutorial .icon {
@@ -231,8 +365,9 @@ a {
   font-size: 1rem;
   font-weight: 400;
   color: #efede8a6;
-}
+} */
 /* BANNER-PART-STYLE */
+
 /* HABIT-PART-STYLE */
 #habit-section {
   margin-top: 100px;
@@ -320,6 +455,8 @@ a {
 }
 .goal-img-container img {
   border-radius: 18px;
+  /* object-view-box: inset(20% 20% 42% 48%);
+  object-fit: cover; */
 }
 /* MY-GOAL-PART-STYLE */
 
