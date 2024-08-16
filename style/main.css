@@ -458,6 +458,10 @@ a {
   border-radius: 18px;
   object-view-box: inset(20% 20% 42% 48%);
   object-fit: cover;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 /* MY-GOAL-PART-STYLE */
 
